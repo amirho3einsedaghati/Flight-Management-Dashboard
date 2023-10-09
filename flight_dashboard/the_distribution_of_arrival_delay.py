@@ -110,8 +110,8 @@ class DistArrDelay():
         fig.quad(source=cds, bottom=0, top='Proportion', left='Lower Limit',
                 right='Upper Limit', color='Color', legend_field='Name', alpha=.7)
         
-        title = Div(text="<span style='font-family:TimesNewRoman; font-size:13pt'><strong>The landing time of airplanes in Minutes to destination Airports\n\
-                    for the different Airline carriers in 2013</strong></span>", align='center')
+        title = Div(text="<span style='font-family:TimesNewRoman; font-size:13pt'><strong>The Gaussian distribution of arrival delay\n\
+                    for the different U.S. Airline carriers in 2013</strong></span>", align='center')
         
         fig.xaxis.axis_label = "The range of time intervals for arrival delays in minutes"
         fig.yaxis.axis_label = 'The proportion of occurrences of instances within specific time intervals '
