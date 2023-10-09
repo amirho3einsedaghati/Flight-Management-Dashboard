@@ -52,8 +52,7 @@ class DepTimeSummary():
             source=self.__cds, columns= columns, autosize_mode='fit_columns', height=500,
             width=1265, sizing_mode= 'scale_both', background= "rgba(0,0,255,0.9)")
         
-        title = Div(text="<h2 style='font-family:TimesNewRoman;'>The Statistical Information of Deparutre Time from Origin Airports\
-                    in Minutes for U.S. Airline Carriers in 2013</h2>", align='center')
+        title = Div(text="<h2 style='font-family:TimesNewRoman;'>The Statistical Information on the Departure Time for U.S. Airline Carriers in 2013</h2>", align='center')
         title_pad = Div(style={'height' : '10px'})
         
         logo_image_url = 'https://i.postimg.cc/t4hhFVqm/3.png'
