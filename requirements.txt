@@ -1,0 +1,7 @@
+bokeh==2.4.3
+SQLAlchemy==1.4.39
+pandas==1.5.3
+scikit-learn==1.2.2
+regex==2022.7.9
+holidays==0.28
+numpy==1.23.5
