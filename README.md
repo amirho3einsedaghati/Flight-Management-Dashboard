@@ -9,7 +9,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/amirho3einsedaghati/Flight-Management-Dashboard?color=yellow)](https://github.com/amirho3einsedaghati/Flight-Management-Dashboard/pulls)
 [![GitHub issues](https://img.shields.io/github/issues-raw/amirho3einsedaghati/Flight-Management-Dashboard?color=red)](https://github.com/amirho3einsedaghati/Flight-Management-Dashboard/issues)
 
-These days, machine learning has a key role in most fields such as health, business and marketing, transportation, finance, and so forth, and definitely, it will change the world using emerging products and tools developed in this area.<br />
+These days, machine learning has a key role in most fields such as health, business and marketing, transportation, finance, and so forth. And definitely, it will change the world using emerging products and tools developed in this area.<br />
 <br>This dashboard was developed for the three most popular NYC airports, John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), and Newark Liberty International Airport (EWR), using the three datasets published on Kaggle.  
 
 # About Target Audiences
@@ -38,7 +38,7 @@ The datasets used in this project are:
 
 This dashboard contains 6 different main modules for creating the tabs of the current document that are:
 <ul>
-  <li>Predicting Arival Time</li>
+  <li>Predicting Arrival Time</li>
   <li>The Distribution of Arrival Delay</li>
   <li>The Variability of Arrival Delay</li>
   <li>Search for The relevant details of Airline Carriers</li>
