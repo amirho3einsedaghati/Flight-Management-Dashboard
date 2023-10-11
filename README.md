@@ -1,4 +1,4 @@
-# Flight-Management-Dashboard
+# Flight Management Dashboard Walkthrough
 
 [![Intro.png](https://i.postimg.cc/MK6wQNfw/Intro.png)](https://postimg.cc/qg5WfmGD)
 
@@ -20,9 +20,9 @@ It can be useful for the airline's operations team and flight passengers.
 
 The datasets used in this project are:
 <ul>
-<li><code>NYC_Flight_Delay</code>:  Undoubtedly, it is one of the most challenging datasets that I've ever worked with. This dataset contains all flights that operated in JFK, LGA, and EWR airports in 2013. You can access this dataset on Kaggle using this <a href='https://www.kaggle.com/datasets/lampubhutia/nyc-flight-delay'>link</a>.</li><br />
-<li><code>JFK, NYC, and LGA Weather</code>: I collected this dataset from <a href='https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS'>The Iowa Environmental Mesonet (IEM)</a> to create the next dataset by combining it with the previous dataset. This dataset contains the weather data for JFK, NYC, and LGA. Since there is no data available specifically for the IATA code EWR and considering that Newark Liberty International Airport (EWR) is located in the west-southwest of Manhattan in New York City, we used the weather records of NYC in 2013 for EWR.</li><br />
-<li><code>JFK, EWR, and LGA Flights</code>: After 10 hours of combination, this dataset was ready to use for the final preprocessing.</li>
+<li><a href='https://www.kaggle.com/datasets/lampubhutia/nyc-flight-delay'><code>NYC_Flight_Delay</code></a>:  Undoubtedly, it is one of the most challenging datasets that I've ever worked with. This dataset contains all flights that operated in JFK, LGA, and EWR airports in 2013. You can access this dataset on Kaggle using this <a href='https://www.kaggle.com/datasets/lampubhutia/nyc-flight-delay'>link</a>.</li><br />
+<li><a href='https://www.kaggle.com/datasets/amirhoseinsedaghati/jfk-nyc-and-lga-weather'><code>JFK, NYC, and LGA Weather</code></a>: I collected this dataset from <a href='https://mesonet.agron.iastate.edu/request/download.phtml?network=NY_ASOS'>The Iowa Environmental Mesonet (IEM)</a> to create the next dataset by combining it with the previous dataset. This dataset contains the weather data for JFK, NYC, and LGA. Since there is no data available specifically for the IATA code EWR and considering that Newark Liberty International Airport (EWR) is located in the west-southwest of Manhattan in New York City, we used the weather records of NYC in 2013 for EWR.</li><br />
+<li><a href='https://www.kaggle.com/datasets/amirhoseinsedaghati/jfk-ewr-and-lga-flights'><code>JFK, EWR, and LGA Flights</code></a>: After 10 hours of combination, this dataset was ready to use for the final preprocessing.</li>
 </ul>
 
 # About Technologies
@@ -85,7 +85,7 @@ It provides statistical information on the Arrival time for U.S. airline carrier
 <img src='https://i.postimg.cc/4y71Q2JK/Screenshot-from-2023-10-09-03-05-25.png'>
 
 # How to run
-1. Use this <a href='http://195.88.208.52:443/'>url</a> to see it online.
+1. You can check out the online version of the dashboard at this <a href='http://195.88.208.52:443/'>URL</a>.
 2. to run it on your local machine, follow the following steps:
    - Download the related stacked model from <a href='https://huggingface.co/amirhoseinsedaghati/Arrival_Time_Prediction/blob/main/stacked_model'>Hugging Face</a>
    - Locate it in the model_dependencies directory
