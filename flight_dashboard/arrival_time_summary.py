@@ -8,11 +8,50 @@ class ArrTimeSummary():
         self.__cds = None
 
 
+    def __revise_time_format(self, row):
+        cols = ['count', 'mean', 'std', 'min', 'max']
+        for col in cols:
+            if col != 'count':
+                time = row[col]
+                if len(str(time)) == 1:
+                    row[col] = "{:02d}:{:02d}".format(int(str(time)[0]), 0)
+                    row[col] = self.__postprocessing(row[col])
+
+                elif len(str(time)) == 2:
+                    row[col] = "{:02d}:{:02d}".format(int(str(time)[0]), int(str(time)[1]))
+                    row[col] = self.__postprocessing(row[col])
+                
+                elif len(str(time)) == 3:
+                    row[col] = "{:02d}:{:02d}".format(int(str(time)[0]), int(str(time)[1:]))
+                    row[col] = self.__postprocessing(row[col])
+
+                elif len(str(time)) == 4:
+                    row[col] = "{:02d}:{:02d}".format(int(str(time)[:2]), int(str(time)[2:]))
+                    row[col] = self.__postprocessing(row[col])
+        
+        return row
+
+
+    def __postprocessing(self, time:str):
+        hour, minute = map(int, time.split(':'))
+        if int(minute) > 59:
+            minute = str(59)
+            time = "{:02}:{:02}".format(hour, minute)
+        
+        if int(hour) == 24:
+            hour = str(0)
+            time = "{:02}:{:02}".format(hour, minute)
+
+        return time
+
+
     def make_arr_time_tab(self, df):
         flights_grouped = df.groupby('carrier')['arr_time'].describe()
-        flights_grouped['mean'] = flights_grouped['mean'].round(2)
-        flights_grouped['std'] = flights_grouped['std'].round(2)
+        flights_grouped['mean'] = flights_grouped['mean']
+        flights_grouped['std'] = flights_grouped['std']
         flights_grouped.drop(['25%', '50%', '75%'], axis=1, inplace=True)
+        flights_grouped = flights_grouped.astype('int')
+        flights_grouped = flights_grouped.apply(self.__revise_time_format, axis=1)
 
         self.__cds = ColumnDataSource(flights_grouped)
 
